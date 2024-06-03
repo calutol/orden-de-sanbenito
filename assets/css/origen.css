@@ -159,14 +159,15 @@ input[type=number] {
     color: var(--color-footer-2);
 }
 
+
 /*Animation*/
 .text-pattern {
     color: transparent;
     background-color: #DC143C !important; /* Rojo */
     background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255, 255, 255, .5) 25px, rgba(255, 255, 255, .5) 50px) !important;
-    background-clip: text !important;
-    animation: color 50s linear infinite !important;
-    background-size: 200% !important;
+    background-clip: text;
+    animation: color 50s linear infinite;
+    background-size: 200%;
 }
 
 @keyframes color {
@@ -213,6 +214,17 @@ input[type=number] {
     .header .offcanvas-li{
         padding: .8rem 0 .8rem 0 !important;     
     }
+    .offcanvas__div ul li{
+        border-bottom: 1px solid #dee2e6; 
+    }
+    .offcanvas__div ul li:last-child{
+        border-bottom: none;
+    }
+    .offcanvas__div ul li a{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    /*Main*/
     .main{
         margin-top: 159px;
     }
