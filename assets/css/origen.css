@@ -136,6 +136,9 @@ input[type=number] {
     .header .offcanvas-li{
         padding: .8rem 0 .8rem 0 !important;     
     }
+    .main{
+        margin-top: 160px;
+    }
  }
  /* Small devices (landscape phones, 576px and up) */
  @media (max-width: 575.98px) { 
@@ -145,5 +148,4 @@ input[type=number] {
     .ptSm-3, .mtSm-3{
         padding-top: 1rem;
     }
-    
   }
