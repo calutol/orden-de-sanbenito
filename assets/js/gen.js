@@ -1,3 +1,4 @@
+
 function incrementar() {
     const input = document.getElementById('numeroModal');
     input.stepUp();
