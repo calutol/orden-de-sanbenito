@@ -42,6 +42,7 @@
     background-size: cover;
     background-position:0dvh;
     position: relative;
+    height: 118px;
 }
 
 .btn-check:checked+.btn, 
@@ -95,27 +96,51 @@ input[type=number] {
 .main{
     margin-top: 178px;
 }
+.main__head{
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    background-size: cover;
+    height: 300px;
+    display: grid;
+    place-content: center;
+}
+.main__head-3{
+    background-position: bottom;
+}
+.main__head-4{
+    background-position: top;
+}
+.main__head h2{
+    text-shadow: 0 2px 16px rgb(0 0 0 / 50%);
+    font-size: 4rem;
+}
 .section-overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, .5);
+    background: rgb(10 88 202 / 53%);
+    *background: rgb(6,73,171);
+    *background: linear-gradient(54deg, rgba(6,73,171,0.896796218487395) 0%, rgba(9,64,121,0.41780462184873945) 100%, rgba(255,0,236,0.7819502801120448) 100%);
     z-index: -1;
+    padding: 1rem;
 }
 
+@media (max-width: 1350px) { 
+    .header .btn{
+        font-size: 1rem !important;
+    }
+ }
 /* X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) { 
     .header .col-5{
         display: none;
     }
- }
- @media (max-width: 1350px) { 
-    .header .btn{
-        font-size: 1rem !important;
-    }
- }
+}
+ 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 991.98px) { 
     .mySm-3{
@@ -137,7 +162,7 @@ input[type=number] {
         padding: .8rem 0 .8rem 0 !important;     
     }
     .main{
-        margin-top: 159px;
+        margin-top: 160px;
     }
  }
  /* Small devices (landscape phones, 576px and up) */
