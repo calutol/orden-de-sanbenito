@@ -145,6 +145,9 @@ input[type=number] {
     background: var(--bg-gradient-footer);
     color: var(--color-footer-2);
 }
+.footer__title a:hover{
+    color: #76a9f5 !important;
+}
 .content-footer a{
     color: var(--color-footer-2);
 }
@@ -156,6 +159,28 @@ input[type=number] {
     color: var(--color-footer-2);
 }
 
+/*Animation*/
+.text-pattern {
+    color: transparent;
+    background-color: #DC143C !important; /* Rojo */
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255, 255, 255, .5) 25px, rgba(255, 255, 255, .5) 50px) !important;
+    background-clip: text !important;
+    animation: color 50s linear infinite !important;
+    background-size: 200% !important;
+}
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+/*Media*/
 @media (max-width: 1350px) { 
     .header .btn{
         font-size: 1rem !important;
@@ -190,6 +215,10 @@ input[type=number] {
     }
     .main{
         margin-top: 159px;
+    }
+    /*footer*/
+    .footer__title{
+        padding: 0 12px;
     }
  }
  /* Small devices (landscape phones, 576px and up) */
