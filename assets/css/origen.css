@@ -156,8 +156,7 @@ input[type=number] {
 .bib-seccion-img{
     background-image: url(../images/biblio-img.jpg);
     background-repeat: no-repeat;
-    background-size:contain;
-    background-position-x: 50%;
+    background-size:cover;
 }
 /*Footer*/
 .content-footer{
