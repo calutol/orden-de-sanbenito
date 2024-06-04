@@ -153,6 +153,16 @@ input[type=number] {
     background-color: #dee2e6; /* Color de la línea */
     z-index: -1; /* Coloca la línea detrás del texto */
 }
+.bib-seccion-img{
+    background-image: url(../images/lectura-1.gif);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: 50%;
+}
+.leer-img{
+    width: 50%;
+    margin: auto;
+}
 
 /*Footer*/
 .content-footer{
@@ -255,5 +265,9 @@ input[type=number] {
     }
     .ptSm-3, .mtSm-3{
         padding-top: 1rem;
+    }
+    .card-footer a{
+        width: 100%;
+        padding: .8rem !important;
     }
   }
