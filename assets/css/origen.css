@@ -17,6 +17,9 @@
 .fs-8{
     font-size: 12px;
 }
+.place-content-center{
+    place-content: center;
+}
 .header-title{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -104,7 +107,6 @@ input[type=number] {
 /* Main */
 .main{
     margin-top: 178px;
-    height: 100vh;
 }
 .main__head{
     background-image: url(../images/fondo.jpg);
