@@ -154,7 +154,7 @@ input[type=number] {
     z-index: -1; /* Coloca la línea detrás del texto */
 }
 .bib-seccion-img{
-    background-image: url(../images/lectura-1.gif);
+    background-image: url(../images/biblio-img.jpg);
     background-repeat: no-repeat;
     background-size:contain;
     background-position-x: 50%;
