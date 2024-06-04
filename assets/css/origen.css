@@ -140,6 +140,19 @@ input[type=number] {
     z-index: -1;
     padding: 1rem;
 }
+.title-seccion{
+    position: relative;
+}
+.title-seccion::before{
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #dee2e6; /* Color de la línea */
+    z-index: -1; /* Coloca la línea detrás del texto */
+}
 
 /*Footer*/
 .content-footer{
