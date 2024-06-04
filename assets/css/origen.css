@@ -159,10 +159,6 @@ input[type=number] {
     background-size:contain;
     background-position-x: 50%;
 }
-.leer-img{
-    width: 50%;
-    margin: auto;
-}
 
 /*Footer*/
 .content-footer{
@@ -221,6 +217,9 @@ input[type=number] {
  
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 991.98px) { 
+    .mbSm-15{
+        margin-bottom: 1.5rem;
+    }
     .mySm-3{
         margin: 1rem 0;
     }
@@ -252,6 +251,9 @@ input[type=number] {
     /*Main*/
     .main{
         margin-top: 159px;
+    }
+    .bib-seccion-img{
+        height: 300px !important;
     }
     /*footer*/
     .footer__title{
