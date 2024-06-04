@@ -145,7 +145,7 @@ input[type=number] {
 }
 .section-overlay-img{
     background: rgb(6,73,171);
-    background: linear-gradient(54deg, rgba(6,73,171,0.896796218487395) 0%, rgba(9,64,121,0.49780462184873945) 100%);
+    background: linear-gradient(54deg, rgba(6,73,171,0.996796218487395) 0%, rgba(9,64,121,0.69780462184873945) 100%);
 }
 .title-seccion{
     position: relative;
