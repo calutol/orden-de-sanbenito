@@ -5,10 +5,13 @@
     --bg-gradient-rgb-footer:rgb(5,56,108);
     --bg-gradient-footer: linear-gradient(115deg, rgba(5,56,108,1) 37%, rgba(224,123,5,1) 100%);
     --bg-sub-footer: #001330;
+    --bg-hsl-video: hsl(215.85deg 66.53% 53.14% / 23.92%);
+    --bg-title-video: #cfdff5;
 
     --color-footer: #e1c798;
     --color-footer-2: #bdb9b2;
     --color-head-menu: #f0f8ff;
+
 
     --hover-bg-btn-head: #043d91;
 }
@@ -166,6 +169,12 @@ input[type=number] {
     background-size:cover;
     background-position: top;
     z-index: -1;
+}
+.container-video{
+    background: var(--bg-hsl-video);
+}
+.bg-title-video{
+    background: var(--bg-title-video);
 }
 /*Footer*/
 .content-footer{
