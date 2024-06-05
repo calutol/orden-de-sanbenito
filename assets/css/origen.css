@@ -275,6 +275,13 @@ input[type=number] {
     .bg-card-nosotros{
         margin-bottom: 1rem;
     }
+    .icon-donar i{
+        font-size: 3rem !important;
+        margin-bottom: 1rem;
+    }
+    .icon-text-donar{
+        margin-bottom: 2rem;
+    }
     /*footer*/
     .footer__title{
         padding: 0 12px;
