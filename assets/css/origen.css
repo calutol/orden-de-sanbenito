@@ -272,6 +272,9 @@ input[type=number] {
     .main{
         margin-top: 159px;
     }
+    .bg-card-nosotros{
+        margin-bottom: 1rem;
+    }
     /*footer*/
     .footer__title{
         padding: 0 12px;
