@@ -178,6 +178,29 @@ input[type=number] {
 .bg-card-nosotros{
     background-color: rgba(255,255,255,.2);
 }
+/*Galeria*/
+.div-galeria__img{
+    transition: filter 0.3s ease;
+}
+.div-galeria::before{
+    content: "\f06e"; /* Código del icono de ojos */
+    font-family: "Font Awesome"; /* Asegúrate de cargar la fuente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff !important; /* Color del icono */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+    z-index: 1;
+}
+.div-galeria:hover img{
+    filter: brightness(0.5); /* Reducción de brillo al pasar el cursor */
+}
+.div-galeria:hover::before {
+    opacity: 1; /* Mostrar el icono al pasar el cursor */
+  }
 
 
 /*Footer*/
