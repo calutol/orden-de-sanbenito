@@ -183,8 +183,8 @@ input[type=number] {
     transition: filter 0.3s ease;
 }
 .div-galeria::before{
-    content: "\f06e"; /* Código del icono de ojos */
-    font-family: "Font Awesome"; /* Asegúrate de cargar la fuente */
+    content: '\F33E'; /* Código del icono de ojos */
+    font-family: "bootstrap-icons"; /* Asegúrate de cargar la fuente */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -195,7 +195,7 @@ input[type=number] {
     transition: opacity 0.3s ease; /* Transición suave para la opacidad */
     z-index: 1;
 }
-.div-galeria:hover img{
+.div-galeria:hover .div-galeria__img{
     filter: brightness(0.5); /* Reducción de brillo al pasar el cursor */
 }
 .div-galeria:hover::before {
