@@ -179,6 +179,7 @@ input[type=number] {
     background-color: rgba(255,255,255,.2);
 }
 /*Galeria*/
+
 .div-galeria__img{
     transition: filter 0.3s ease;
 }
