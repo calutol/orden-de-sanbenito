@@ -311,6 +311,14 @@ input[type=number] {
     .w-sm-100{
         width: 100%;
     }
+    .btn-nv-shop{
+        color: #212529 !important;
+        margin-right: 1rem;
+        align-items: center;
+    }
+    .btn-nv-shop i{
+        font-size: 1.5rem;
+    }
     /*footer*/
     .footer__title{
         padding: 0 12px;
