@@ -202,7 +202,9 @@ input[type=number] {
 .div-galeria:hover::before {
     opacity: 1; /* Mostrar el icono al pasar el cursor */
   }
-
+.w-lg-60{
+    width: 60%;
+}
 
 /*Footer*/
 .content-footer{
@@ -305,6 +307,9 @@ input[type=number] {
     }
     .icon-text-donar{
         margin-bottom: 2rem;
+    }
+    .w-sm-100{
+        width: 100%;
     }
     /*footer*/
     .footer__title{
