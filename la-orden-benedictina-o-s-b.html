@@ -200,9 +200,31 @@
                 </li>
 
                 <li class="nav-item px-4 offcanvas-li">
-                  <a class="nav-link color-head-menu" href="tienda-online.html"
-                    >Tienda online</a
+                  <span
+                    class="d-flex justify-content-between align-items-center"
                   >
+                    <a
+                      class="nav-link color-head-menu"
+                      href="tienda-online.html"
+                    >
+                      <div>Tienda online</div>
+                    </a>
+                    <button
+                      type="button"
+                      class="btn text-white position-relative rounded-circle ms-2 py-0 btn-nv-shop"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasShop"
+                      aria-controls="offcanvasExample"
+                    >
+                      <i class="bi bi-cart3"></i>
+                      <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >
+                        2
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+                    </button>
+                  </span>
                 </li>
               </ul>
             </div>
@@ -327,6 +349,125 @@
             <li><a href="canons-de-la-orden.html">Canons de la orden</a></li>
           </ul>
         </div>
+      </div>
+      <!--offcanvas-->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasShop"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <div
+              class="d-flex justify-content-between align-items-center border-bottom p-3 fw-semibold"
+            >
+              <div class="text-start">
+                <div>San Bentio Vol1</div>
+                <div class="text-body-secondary">
+                  <small>Libro</small>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex align-items-center mySm-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-ctd mx-2"
+                    onclick="decrementar()"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    id="numeroModal"
+                    value="1"
+                    min="1"
+                    style="width: 50px"
+                    required=""
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-ctd mx-2"
+                    onclick="incrementar()"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div class="text-body-secondary text-decoration-line-through">
+                  <small>$19.99</small>
+                </div>
+                <div class="fw-bolder">$10</div>
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-between align-items-center border-bottom p-3 fw-semibold"
+            >
+              <div class="text-start">
+                <div>San Bentio Vol2</div>
+                <div class="text-body-secondary">
+                  <small>Libro</small>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex align-items-center mySm-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-ctd mx-2"
+                    onclick="decrementar()"
+                  >
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    class="form-control text-center"
+                    id="numeroModal"
+                    value="1"
+                    min="1"
+                    style="width: 50px"
+                    required=""
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-ctd mx-2"
+                    onclick="incrementar()"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div class="text-body-secondary text-decoration-line-through">
+                  <small>$19.99</small>
+                </div>
+                <div class="fw-bolder">$10</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center p-3 border-top fw-bolder fs-4"
+        >
+          <div class="">Total</div>
+          <div>$20</div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary rounded-0 py-3 fw-semibold"
+        >
+          Proceder al pago
+        </button>
       </div>
     </main>
 
