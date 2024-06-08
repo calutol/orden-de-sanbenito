@@ -236,6 +236,16 @@ input[type="number"] {
   outline: 0;
 }
 
+#buttonUp {
+  position: fixed;
+  bottom: 40px;
+  right: -100%;
+  transition: all 1s;
+}
+.w-ancla {
+  height: 45px;
+  width: 45px;
+}
 /*Footer*/
 .content-footer {
   background: var(--bg-gradient-rgb-footer);

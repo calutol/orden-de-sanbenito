@@ -14,3 +14,17 @@ $(document).ready(function() {
         $('#inputOculto').toggle(); // Alternar la visibilidad del div
     });
 });
+
+//Ancla
+function irArriba(pxPantalla){
+  window.addEventListener('scroll', () => {
+    var scroll = document.documentElement.scrollTop;
+    var buttonUp = document.getElementById('buttonUp');
+    if(scroll > pxPantalla){
+      buttonUp.style.right = 20 + "px";
+    } else{
+      buttonUp.style.right = -100 + "%";
+    }
+  })
+}
+irArriba(2300); 
