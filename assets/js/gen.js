@@ -28,3 +28,33 @@ function irArriba(pxPantalla){
   })
 }
 irArriba(2300); 
+
+// ancla capítulos
+
+// Agregamos un offset al desplazamiento para compensar el menú
+$(document).ready(() => {
+  console.log("cargo");
+  var target = window.location.href;
+  if (target.includes("#")) {
+    target = "#" + target.split("#")[1];
+  }
+
+  $("html, body").animate(
+    {
+      scrollTop: $(target).offset().top - 190, // 100 es el valor que necesitaremos ajustar a la altura exacta de tu menú
+    },
+    10
+  );
+
+  history.pushState(null, "", window.location.href.split("#")[0]);
+});
+
+function mover_cape(id) {
+  console.log("entro mover");
+  $("html, body").animate(
+    {
+      scrollTop: $(id).offset().top - 190, // 100 es el valor que necesitaremos ajustar a la altura exacta de tu menú
+    },
+    10
+  );
+}

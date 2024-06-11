@@ -246,6 +246,10 @@ input[type="number"] {
   height: 45px;
   width: 45px;
 }
+.cap-nav-fixed {
+  top: 200px;
+}
+
 /*Footer*/
 .content-footer {
   background: var(--bg-gradient-rgb-footer);
