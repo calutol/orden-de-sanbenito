@@ -372,6 +372,10 @@ input[type="number"] {
   .biography__ul {
     justify-content: center;
   }
+  .article img {
+    width: 100%;
+    margin: 0 0 1.5rem 0 !important;
+  }
   .footer-textarea {
     align-items: flex-start !important;
   }
