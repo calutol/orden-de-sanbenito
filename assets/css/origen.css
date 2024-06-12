@@ -124,6 +124,7 @@ input[type="number"] {
   height: 300px;
   display: grid;
   place-content: center;
+  background-attachment: fixed;
 }
 .main__head-3 {
   background-position: bottom;
@@ -185,6 +186,7 @@ input[type="number"] {
   background-size: cover;
   background-position: center;
   z-index: -1;
+  background-attachment: fixed;
 }
 .bg-card-nosotros {
   background-color: rgba(255, 255, 255, 0.2);
