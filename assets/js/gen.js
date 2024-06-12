@@ -27,7 +27,7 @@ function irArriba(pxPantalla){
     }
   })
 }
-irArriba(2300); 
+irArriba(1900); 
 
 // ancla capítulos
 
