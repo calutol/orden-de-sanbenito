@@ -258,6 +258,10 @@ input[type="number"] {
   font-size: 14px;
   font-weight: 500;
 }
+.nosotros-perfil-img {
+  border: 2px solid #ffc107;
+  padding: 2px;
+}
 
 /*Footer*/
 .content-footer {
@@ -374,6 +378,9 @@ input[type="number"] {
   }
   .btn-nv-shop i {
     font-size: 1.5rem;
+  }
+  .nosotros-perfil-img {
+    width: 160px;
   }
   /*footer*/
   .footer__title {
