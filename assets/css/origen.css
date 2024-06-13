@@ -18,6 +18,11 @@
 }
 
 /*Incio de Header*/
+.disabledBtn {
+  /*Btn desabilitar header*/
+  cursor: not-allowed;
+  pointer-events: none;
+}
 .fs-8 {
   font-size: 12px;
 }
