@@ -410,4 +410,10 @@ input[type="number"] {
   .main__head h2 {
     font-size: 3rem;
   }
+  .main__head {
+    background-attachment: scroll;
+  }
+  .seccion-nosotros {
+    background-attachment: scroll;
+  }
 }
