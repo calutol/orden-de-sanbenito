@@ -249,7 +249,7 @@
                       <span
                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                       >
-                        2
+                        0
                         <span class="visually-hidden">unread messages</span>
                       </span>
                     </button>
@@ -383,125 +383,38 @@
             <li><a href="canons-de-la-orden.html">Canons de la orden</a></li>
           </ul>
         </div>
-      </div>
-      <!--offcanvas-->
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasShop"
-        aria-labelledby="offcanvasExampleLabel"
-      >
-        <div class="offcanvas-header border-bottom">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito</h5>
+        <!--offcanvas-->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasShop"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <small class="fw-bolder text-secondary opacity-50">Vacío</small>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center p-3 border-top fw-bolder fs-4"
+          >
+            <div class="">Total</div>
+            <div>$0</div>
+          </div>
           <button
             type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+            class="btn btn-primary rounded-0 py-3 fw-semibold"
+          >
+            Proceder al pago
+          </button>
         </div>
-        <div class="offcanvas-body">
-          <div>
-            <div
-              class="d-flex justify-content-between align-items-center border-bottom p-3 fw-semibold"
-            >
-              <div class="text-start">
-                <div>San Bentio Vol1</div>
-                <div class="text-body-secondary">
-                  <small>Libro</small>
-                </div>
-              </div>
-              <div>
-                <div class="d-flex align-items-center mySm-3">
-                  <button
-                    type="button"
-                    class="btn btn-primary btn-ctd mx-2"
-                    onclick="decrementar()"
-                  >
-                    -
-                  </button>
-                  <input
-                    type="number"
-                    class="form-control text-center"
-                    id="numeroModal"
-                    value="1"
-                    min="1"
-                    style="width: 50px"
-                    required=""
-                  />
-                  <button
-                    type="button"
-                    class="btn btn-primary btn-ctd mx-2"
-                    onclick="incrementar()"
-                  >
-                    +
-                  </button>
-                </div>
-              </div>
-              <div>
-                <div class="text-body-secondary text-decoration-line-through">
-                  <small>$19.99</small>
-                </div>
-                <div class="fw-bolder">$10</div>
-              </div>
-            </div>
-            <div
-              class="d-flex justify-content-between align-items-center border-bottom p-3 fw-semibold"
-            >
-              <div class="text-start">
-                <div>San Bentio Vol2</div>
-                <div class="text-body-secondary">
-                  <small>Libro</small>
-                </div>
-              </div>
-              <div>
-                <div class="d-flex align-items-center mySm-3">
-                  <button
-                    type="button"
-                    class="btn btn-primary btn-ctd mx-2"
-                    onclick="decrementar()"
-                  >
-                    -
-                  </button>
-                  <input
-                    type="number"
-                    class="form-control text-center"
-                    id="numeroModal"
-                    value="1"
-                    min="1"
-                    style="width: 50px"
-                    required=""
-                  />
-                  <button
-                    type="button"
-                    class="btn btn-primary btn-ctd mx-2"
-                    onclick="incrementar()"
-                  >
-                    +
-                  </button>
-                </div>
-              </div>
-              <div>
-                <div class="text-body-secondary text-decoration-line-through">
-                  <small>$19.99</small>
-                </div>
-                <div class="fw-bolder">$10</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="d-flex justify-content-between align-items-center p-3 border-top fw-bolder fs-4"
-        >
-          <div class="">Total</div>
-          <div>$20</div>
-        </div>
-        <button
-          type="button"
-          class="btn btn-primary rounded-0 py-3 fw-semibold"
-        >
-          Proceder al pago
-        </button>
       </div>
     </main>
 
@@ -530,116 +443,27 @@
                   Contamos con las siguientes opciones
                 </div>
                 <div class="mt-4">
-                  <div class="row align-items-center">
-                    <div class="col-lg pe-0">
-                      <div class="">
-                        <input
-                          type="radio"
-                          class="btn-check"
-                          name="options-base"
-                          id="option5"
-                          autocomplete="off"
-                          checked
-                          required
-                        />
-                        <label class="btn border" for="option5"
-                          >Misa por una vez</label
-                        >
-
-                        <input
-                          type="radio"
-                          class="btn-check"
-                          name="options-base"
-                          id="option6"
-                          autocomplete="off"
-                          required
-                        />
-                        <label class="btn border" for="option6"
-                          >Misa mensual</label
-                        >
-                      </div>
-                    </div>
-                    <div class="col-lg p-0">
-                      <div class="d-flex align-items-center mySm-3">
-                        <div class="fw-bolder mx-2 text-nowrap">
-                          Número de misa
-                        </div>
-                        <button
-                          type="button"
-                          class="btn btn-primary btn-ctd mx-2"
-                          onclick="decrementar()"
-                        >
-                          -
-                        </button>
-                        <input
-                          type="number"
-                          class="form-control text-center"
-                          id="numeroModal"
-                          value="1"
-                          min="1"
-                          style="width: 50px"
-                          required
-                        />
-                        <button
-                          type="button"
-                          class="btn btn-primary btn-ctd mx-2"
-                          onclick="incrementar()"
-                        >
-                          +
-                        </button>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="lh-sm">
-                        <small
-                          >La donación sugerida por Misa es <b>1</b> por
-                          <b>$10</b></small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-4">
                   <div class="mb-3">
-                    <label
-                      for="exampleFormControlInput1"
-                      class="form-label fw-semibold"
-                      >En honor de / En memoria de:</label
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Título</label
                     >
                     <input
                       type="text"
                       class="form-control"
-                      id="exampleFormControlInput1"
-                      required
+                      id="datoMotivo"
+                      placeholder="Por favor indique el motivo..."
                     />
-                    <div class="invalid-feedback">Rellene el campo.</div>
                   </div>
                   <div class="mb-3">
-                    <label
-                      for="exampleFormControlTextarea1"
-                      class="form-label fw-semibold"
-                      >Intenciones para la misa:</label
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Descriptión</label
                     >
                     <textarea
                       class="form-control"
-                      id="exampleFormControlTextarea1"
+                      id="mensajeMotivo"
                       rows="3"
-                      placeholder="Escribe tu mensaje..."
-                      required
+                      placeholder="Por favor detalla el motivo..."
                     ></textarea>
-                    <div class="invalid-feedback">Rellene el campo.</div>
-                    <div class="mt-2 d-flex align-items-center footer-textarea">
-                      <small
-                        >Tienes <b>400</b> caracteres restantes para tus
-                        intenciones.</small
-                      >
-                      <button
-                        class="btn p-0 fw-bolder ms-2 text-primary"
-                        type="reset"
-                      >
-                        <small>Limpiar</small>
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -652,9 +476,15 @@
               >
                 Cerrar
               </button>
-              <button type="submit" class="btn btn-primary fw-semibold">
-                Pagar ahora
-              </button>
+              <a
+                onclick="enviar_2()"
+                target="_blank"
+                href="#"
+                id="btnEnviar"
+                class="btn btn-primary fw-semibold"
+              >
+                Enviar $15
+              </a>
             </div>
           </form>
         </div>
@@ -1371,5 +1201,17 @@
     ></script>
     <script src="assets/js/from-validation.js" crossorigin="anonymous"></script>
     <script src="assets/js/gen.js" crossorigin="anonymous"></script>
+    <script>
+      const datoMotivo = document.querySelector("#datoMotivo");
+      const mensajeMotivo = document.querySelector("#mensajeMotivo");
+      const btnEnviar = document.querySelector("#btnEnviar");
+
+      var mensaje;
+      function enviar_2() {
+        console.log("paso");
+        mensaje = ` https://api.whatsapp.com/send?phone=580000000000&text=${datoMotivo.value}:%20${mensajeMotivo.value}`;
+        btnEnviar.href = mensaje;
+      }
+    </script>
   </body>
 </html>
