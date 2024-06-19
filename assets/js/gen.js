@@ -45,7 +45,10 @@ $(document).ready(() => {
     },
     10
   );
-
+  if(target == "#pills-Creemos-tab"){
+    console.log("si")
+    $("#pills-Creemos-tab").click()
+  }
   history.pushState(null, "", window.location.href.split("#")[0]);
 });
 
