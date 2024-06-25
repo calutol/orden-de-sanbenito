@@ -398,6 +398,9 @@ input[type="number"] {
   .footer__title {
     padding: 0 12px;
   }
+  .qr {
+    width: 20% !important ;
+  }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
@@ -427,5 +430,8 @@ input[type="number"] {
   }
   .seccion-nosotros {
     background-attachment: scroll;
+  }
+  .qr {
+    width: 36% !important ;
   }
 }
