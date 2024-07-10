@@ -450,6 +450,15 @@ input[type="number"] {
   .navbar-brand img {
     width: 156px;
   }
+  .btn-nv-shop {
+    height: 42px;
+    width: 42px;
+    display: grid;
+    place-content: center;
+  }
+  .btn-nv-shop i {
+    font-size: 1.3rem;
+  }
   .biography__ul {
     justify-content: center;
   }
