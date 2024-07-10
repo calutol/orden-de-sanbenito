@@ -127,7 +127,12 @@ input[type="number"] {
 #inputOculto {
   display: none;
 }
-
+button.btn-nv-shop {
+  display: grid;
+  place-content: center;
+  height: 36px;
+  width: 36px;
+}
 /* Main */
 .main {
   /*margin-top: 178px;*/
