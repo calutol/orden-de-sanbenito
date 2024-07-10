@@ -49,8 +49,8 @@
     ></script>
   </head>
   <body id="ancla">
-    <!--Header-->
-    <header class="header fixed-top bg-body">
+    <!--head header-->
+    <section class="header bg-body">
       <!--head-->
       <div class="container-fluid d-none d-lg-block head p-4">
         <div class="row align-items-center">
@@ -70,14 +70,15 @@
           </div>
           <div class="col text-center">
             <button
+              title="Donar"
               type="button"
-              class="btn bg-btn-head color-btn-head fw-semibold fs-5 text-uppercase py-2"
+              class="btn bg-btn-head color-btn-head fw-semibold fs-5 text-uppercase py-2 px-4"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
-              Ofrecer una misa
+              <i class="fa-solid fa-dove me-2"></i>Ofrecer una misa
             </button>
-            <div class="btn-group">
+            <!--<div class="btn-group">
               <button
                 type="button"
                 class="btn btn-danger dropdown-toggle fw-semibold fs-5 py-2 text-uppercase btn-danger-donar disabledBtn"
@@ -108,20 +109,21 @@
                   >
                 </li>
               </ul>
-            </div>
+            </div>-->
           </div>
-          <div class="col-1">
+          <div class="col-2">
             <div
               class="fw-semibold fs-5 d-flex align-items-center justify-content-center"
             >
+              <i class="bi bi-globe me-2"></i>
               <a
-                href=""
+                href="#"
                 class="link-underline link-underline-opacity-0 link-body-emphasis"
                 >EN</a
               >
               <span class="fs-6 mx-1 text-secondary"> | </span>
               <a
-                href=""
+                href="#"
                 class="link-underline link-underline-opacity-0 link-body-emphasis"
                 >ES</a
               >
@@ -129,6 +131,9 @@
           </div>
         </div>
       </div>
+    </section>
+    <!--Header-->
+    <header class="header sticky-top">
       <!--Navbar-->
       <nav
         class="navbar navbar-expand-lg bg-menu px-2 border-top border-4 border-warning shadow-sm"
@@ -284,7 +289,7 @@
             <i class="fa-solid fa-dove"></i> Ofrecer misa
           </button>
         </div>
-        <div class="btn-group w-100">
+        <div class="btn-group w-100 d-none">
           <button
             type="button"
             class="disabledBtn btn-danger-donar btn btn-danger dropdown-toggle fw-semibold fs-5 py-3 text-uppercase w-100 rounded-0"
@@ -329,7 +334,7 @@
               <span class="bg-body px-3">Misiones</span>
             </h1>
           </div>
-          <div class="pb-5">
+          <div class="pb-3">
             <div class="main__mision-card">
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -337,7 +342,7 @@
                     class="card h-100 rounded-4 shadow-sm overflow-hidden hover-card"
                   >
                     <img
-                      src="assets/images/ayudas/mision-misa.jpg"
+                      src="assets/images/ayudas/image.remini-enhanced.jpg"
                       class="card-img-top object-fit-cover"
                       alt="La Misa en la Orden de San Benito: Renovación,
                       Redención y Comunión"
@@ -356,7 +361,7 @@
                     <div class="card-footer border-0 bg-body rounded-4 py-4">
                       <a
                         href="#"
-                        class="btn btn-primary stretched-link shadow px-3 py-2 fw-medium"
+                        class="btn btn-san stretched-link shadow px-3 py-2 fw-medium"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal"
                         ><i class="fa-solid fa-wine-glass me-2"></i>Ofrece una
@@ -389,7 +394,7 @@
                     <div class="card-footer bg-body border-0 rounded-4 py-4">
                       <a
                         href="#"
-                        class="btn btn-primary stretched-link shadow px-3 py-2 fw-medium"
+                        class="btn btn-san stretched-link shadow px-3 py-2 fw-medium"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal2"
                         ><i class="fa-solid fa-hand-holding-dollar me-2"></i>
@@ -422,8 +427,9 @@
                     </div>
                     <div class="card-footer border-0 bg-body rounded-4 py-4">
                       <a
-                        href="#"
-                        class="btn btn-primary stretched-link shadow px-3 py-2 fw-medium"
+                        target="_blank"
+                        href="https://wa.link/i6rbtx"
+                        class="btn btn-san stretched-link shadow px-3 py-2 fw-medium"
                         ><i class="fa-solid fa-hands-holding-circle me-2"></i
                         >Dar ofrenda</a
                       >
@@ -467,7 +473,7 @@
                       1 Corintios <cite title="Source Title">14:40 (NVI)</cite>
                     </figcaption>
                   </figure>
-                  <div class="section-overlay-img"></div>
+                  <div class="section-overlay"></div>
                 </div>
               </div>
               <div class="col-lg-8">
@@ -475,9 +481,9 @@
                   <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                       <div
-                        class="card h-100 rounded-4 shadow-sm bg-primary-subtle hover-card"
+                        class="card h-100 rounded-4 shadow-sm bg-oblig hover-card"
                       >
-                        <div class="card-body text-start text-primary-emphasis">
+                        <div class="card-body text-start text-oblig">
                           <h5 class="card-title fw-bolder">
                             La Orden Benedictina (O.S.B.)
                           </h5>
@@ -490,11 +496,11 @@
                           </p>
                         </div>
                         <div
-                          class="card-footer border-0 bg-body rounded-4 py-4 bg-primary-subtle"
+                          class="card-footer border-0 rounded-4 py-4 bg-transparent"
                         >
                           <a
                             href="la-orden-benedictina-o-s-b.html"
-                            class="btn btn-primary stretched-link shadow fw-medium"
+                            class="btn btn-san stretched-link shadow fw-medium"
                             ><i class="fa-solid fa-book me-2"></i>Leer
                             completo</a
                           >
@@ -503,9 +509,9 @@
                     </div>
                     <div class="col">
                       <div
-                        class="card h-100 rounded-4 shadow-sm bg-primary-subtle hover-card"
+                        class="card h-100 rounded-4 shadow-sm bg-oblig hover-card"
                       >
-                        <div class="card-body text-start text-primary-emphasis">
+                        <div class="card-body text-start text-oblig">
                           <h5 class="card-title fw-bolder">
                             Reglas de la orden
                           </h5>
@@ -518,11 +524,11 @@
                           </p>
                         </div>
                         <div
-                          class="card-footer border-0 bg-body rounded-4 py-4 bg-primary-subtle"
+                          class="card-footer border-0 rounded-4 py-4 bg-transparent"
                         >
                           <a
                             href="reglas-de-la-orden.html"
-                            class="btn btn-primary stretched-link shadow fw-medium"
+                            class="btn btn-san stretched-link shadow fw-medium"
                             ><i class="fa-solid fa-book me-2"></i>Leer
                             completo</a
                           >
@@ -531,9 +537,9 @@
                     </div>
                     <div class="col">
                       <div
-                        class="card h-100 rounded-4 shadow-sm bg-primary-subtle hover-card"
+                        class="card h-100 rounded-4 shadow-sm bg-oblig hover-card"
                       >
-                        <div class="card-body text-start text-primary-emphasis">
+                        <div class="card-body text-start text-oblig">
                           <h5 class="card-title fw-bolder">
                             Canons de la orden
                           </h5>
@@ -546,11 +552,11 @@
                           </p>
                         </div>
                         <div
-                          class="card-footer border-0 bg-body rounded-4 py-4 bg-primary-subtle"
+                          class="card-footer border-0 rounded-4 py-4 bg-transparent"
                         >
                           <a
                             href="canons-de-la-orden.html"
-                            class="btn btn-primary stretched-link shadow fw-medium"
+                            class="btn btn-san stretched-link shadow fw-medium"
                             ><i class="fa-solid fa-book me-2"></i>Leer
                             completo</a
                           >
@@ -568,8 +574,8 @@
           <div class="container-fluid py-5 text-shadow">
             <div class="mb-5 text-black">
               <h1 class="text-white">
-                <span class="px-3 fw-bolder">Nosotros</span>
-                <p class="display-6 fs-4">
+                <div class="px-3 fw-bolder mb-2">Nosotros</div>
+                <p class="display-6 fs-3">
                   Hola, somos el Padre Misael y el Padre Luis: Guardianes de la
                   Tradición Benédictina
                 </p>
@@ -630,7 +636,7 @@
               <span class="bg-body px-3">Lo que hacemos</span>
             </h1>
           </div>
-          <div class="py-5">
+          <div class="pt-5 pb-4">
             <div class="row align-items-center">
               <div class="col-lg">
                 <div
@@ -700,7 +706,7 @@
         </div>
 
         <!--Articulos-->
-        <div class="index-article container py-4">
+        <div class="index-article container py-3">
           <div class="mb-3 text-black">
             <h1 class="title-seccion fw-bolder">
               <span class="bg-body px-3">Artículos</span>
@@ -867,10 +873,7 @@
             <div class="">Total</div>
             <div>$0</div>
           </div>
-          <button
-            type="button"
-            class="btn btn-primary rounded-0 py-3 fw-semibold"
-          >
+          <button type="button" class="btn btn-san rounded-0 py-3 fw-semibold">
             Proceder al pago
           </button>
         </div>
@@ -940,7 +943,7 @@
                 target="_blank"
                 href="#"
                 id="btnEnviar"
-                class="btn btn-primary fw-semibold"
+                class="btn btn-san fw-semibold"
               >
                 Enviar $15
               </a>
@@ -1192,7 +1195,7 @@
                     <div class="">
                       <button
                         type="button"
-                        class="btn btn-primary fw-semibold py-2 w-100"
+                        class="btn btn-san fw-semibold py-2 w-100"
                       >
                         Confirmar
                       </button>
@@ -1458,7 +1461,7 @@
     </div>
     <!--ancla-->
     <a
-      class="nav-link ankla text-white fw-bolder p-0 z-1 bg-primary rounded-3"
+      class="nav-link ankla text-white fw-bolder p-0 z-1 bg-ancla rounded-3"
       id="buttonUp"
       href="#ancla"
     >
@@ -1473,11 +1476,9 @@
           Gracias por tu generosidad. ¿tiene problemas para donar?
           <a
             type="button"
-            href="#"
+            href="https://wa.link/i6rbtx"
             target="_blank"
             class="link-offset-3 h3 text-pattern"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal2"
             ><i class="bi bi-balloon-heart-fill text-head-footer"></i> Haga clic
             aquí para donar</a
           >
