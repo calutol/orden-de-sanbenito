@@ -447,6 +447,9 @@ input[type="number"] {
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
+  .navbar-brand img {
+    width: 156px;
+  }
   .biography__ul {
     justify-content: center;
   }
