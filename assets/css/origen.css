@@ -83,8 +83,8 @@
 .btn.show,
 .btn:first-child:active,
 :not(.btn-check) + .btn:active {
-  border-color: #0a58ca !important;
-  background: rgb(10 88 202 / 9%);
+  border-color: var(--border-btn-head);
+  background: var(--bg-btn-head);
 }
 .btn-danger-donar.btn-check:checked + .btn,
 .btn-danger-donar.btn.active,
